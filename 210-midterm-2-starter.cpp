@@ -258,7 +258,7 @@ int main() {
         }
         if (serveCustomerProb <= 40)
         {
-            /* code */
+            
         }
         
 
