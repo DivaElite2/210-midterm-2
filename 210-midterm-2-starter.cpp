@@ -231,6 +231,7 @@ int main() {
         // create the framework for coffeeshop
 
         DoublyLinkedList coffeeLine;
+        string currentFrontCustomer = "";
 
         // store opens
         cout << "Store opens:" <<endl;
@@ -238,6 +239,7 @@ int main() {
         // Get random name from vector
         int randomIndex = rand() % names.size();
         string customerName = names[randomIndex];
+        coffeeLine.push_back(customerName);
 
         // add customer to the end of line 
         coffeeLine.push_back(customerName);
@@ -255,11 +257,14 @@ int main() {
             int endCustomerProb = rand() % 100 + 1;
             int anyCustomerProb = rand() % 100 + 1;
             int vipCustomerProb = rand() % 100 + 1;
+
+            // 40
+
+    
         }
-        if (serveCustomerProb <= 40)
-        {
-            
-        }
+
+
+       
         
 
     return 0;
