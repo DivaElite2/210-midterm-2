@@ -208,9 +208,9 @@ public:
 int main() {
 
     //Random number seed
+    srand(time(0));
     cout << MIN_NR + MIN_LS + MAX_NR + MAX_LS;  // dummy statement to avoid compiler warning
-
-    
+        //Read names from file
         vector<string>names;
         ifstream file("names.txt");
         string name;
@@ -226,6 +226,23 @@ int main() {
             }
         }
         file.close();
+
+
+        // create the framework for coffeeshop
+
+        DoublyLinkedList coffeeLine;
+
+        // store opens
+        cout << "Store opens:" <<endl;
+        for(int i = 0; i < 5; i++) {
+        // Get random name from vector
+        int randomIndex = rand() % names.size();
+        string customerName = names[randomIndex];
+
+        // add customer to the end of line 
+        coffeeLine.push
+        }
+
         
 
     return 0;
