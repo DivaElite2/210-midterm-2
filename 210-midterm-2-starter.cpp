@@ -249,6 +249,15 @@ int main() {
         // Simulation loop for 2-20 using local variables
         for (int timeStep = 2; timeStep<=20; timeStep++) 
         {
+            //Generate random numbers for each probability check
+            int serveCustomerProb = rand() % 100 + 1; //1-100
+            int newCustomerProb = rand() % 100 + 1;
+            int endCustomerProb = rand() % 100 + 1;
+            int anyCustomerProb = rand() % 100 + 1;
+            int vipCustomerProb = rand() % 100 + 1;
+        }
+        if (serveCustomerProb <= 40)
+        {
             /* code */
         }
         
