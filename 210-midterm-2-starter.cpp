@@ -258,7 +258,24 @@ int main() {
             int anyCustomerProb = rand() % 100 + 1;
             int vipCustomerProb = rand() % 100 + 1;
 
-            // 40
+            // 40% probability serve customer in front of line
+            if(serveCustomerProb <= 40) {
+                cout << "     A customer is served" <<endl;
+                coffeeLine.pop_front();
+            }
+
+            // 60% probability new customer joins line
+            if(newCustomerProb <= 60) {
+                int randomIndex = rand() % names.size();
+                string customerName = names[randomIndex];
+                coffeeLine.push_back(customerName);
+                cout<<".   [End customer] left the line" <<endl;
+            }
+                
+            // 20% probability: End customer leaves
+            if(endCustomerProb <= 20) {
+                
+            }
 
     
         }
