@@ -232,7 +232,7 @@ int main() {
 
         DoublyLinkedList coffeeLine;
         string currentFrontCustomer = "";
-
+        string currentEndCustomer = "";
         // store opens
         cout << "Store opens:" <<endl;
         for(int i = 0; i < 5; i++) {
@@ -273,8 +273,11 @@ int main() {
             }
                 
             // 20% probability: End customer leaves
-            if(endCustomerProb <= 20) {
-                
+            if(endCustomerProb <= 20 && !currentFrontCustomer.empty()) {
+                cout << currentEndCustomer << "left the line" <<endl;
+                coffeeLine.pop_back();
+                currentEndCustomer = ""; // need to figure out new end customer
+
             }
 
     
