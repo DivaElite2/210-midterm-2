@@ -240,9 +240,17 @@ int main() {
         string customerName = names[randomIndex];
 
         // add customer to the end of line 
-        coffeeLine.push
+        coffeeLine.push_back(customerName);
+         cout << " " << customerName << " joined the line" <<endl;
         }
+        cout << "  Resulting line:" <<endl;
+        coffeeLine.print();
 
+        // Simulation loop for 2-20 using local variables
+        for (int timeStep = 2; timeStep<=20; timeStep++) 
+        {
+            /* code */
+        }
         
 
     return 0;
